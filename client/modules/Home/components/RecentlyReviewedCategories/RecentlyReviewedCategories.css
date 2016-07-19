@@ -1,0 +1,110 @@
+.recently_reviewed_categories {
+  display: block;
+  background: #F9FAFB;
+  padding: 55px 45px;
+}
+
+.recently_reviewed_categories_title {
+  display: block;
+  font: 18px Roboto;
+  font-weight: 300;
+  color: #414141;
+}
+
+.reviews {
+  display: inline-block;
+  float: right;
+  font: 12px Roboto;
+  font-weight: 300;
+  color: lightgray;
+}
+
+.recently_reviewed_category_wrapper {
+  margin-top: 15px;
+}
+
+.recently_reviewed_category {
+  display: block;
+  width: 49%;
+  padding: 20px;
+  float: left;
+  border-radius: 2px;
+  margin: 1%;
+  background: white;
+  cursor: pointer;
+  transition: all .3s ease-in;
+}
+
+.recently_reviewed_category:nth-child(1) {
+  width: 48%;
+  margin: 1%;
+  margin-left: 0;
+}
+
+.recently_reviewed_category:nth-child(2) {
+  width: 24%;
+  margin: 1%;
+  text-align: center;
+}
+
+.recently_reviewed_category:nth-child(3) {
+  width: 24%;
+  margin: 1%;
+  margin-right: 0;
+  text-align: center;
+}
+
+.recently_reviewed_category img {
+  height: 155px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.recently_reviewed_category .score {
+  font: 36px Roboto;
+  font-weight: 300;
+  color: #448aaf;
+}
+
+.recently_reviewed_category .title {
+  font: 16px Roboto;
+  font-weight: 300;
+  transition: all .3s ease-in;
+}
+
+.recently_reviewed_category:hover .title {
+  color: #448aff;
+}
+.recently_reviewed_category:hover {
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 1000px) {
+  .recently_reviewed_category {
+    width: 99.5%;
+  }
+
+  .recently_reviewed_category:nth-child(1) {
+    width: 100%;
+    margin: 1% 0;
+  }
+  .recently_reviewed_category:nth-child(2) {
+    margin-left: 0;
+  }
+  .recently_reviewed_category:nth-child(2),
+  .recently_reviewed_category:nth-child(3) {
+    width: 49%;
+  }
+
+  .recently_reviewed_category .title {
+    font: 16px Roboto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .recently_reviewed_category:nth-child(2),
+  .recently_reviewed_category:nth-child(3) {
+    width: 100%;
+    margin: 1% 0;
+  }
+}

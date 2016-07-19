@@ -1,0 +1,26 @@
+.footer {
+  background: #212121;
+  min-height: 50px;
+  padding: 20px 0;
+  font-family: Roboto, sans-serif !important;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.footer ul>li {
+  display: inline-block;
+}
+
+.footer ul>li a {
+  color: #757575;
+  font-size: 18px;
+  padding: 1.3rem;
+  transition: color .5s;
+  text-decoration: none;
+}

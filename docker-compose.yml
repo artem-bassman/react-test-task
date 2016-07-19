@@ -1,0 +1,15 @@
+web:
+  build: .
+  links:
+   - db
+  ports:
+   - "80:8000"
+  volumes:
+   - .:/usr/src/app/
+  environment:
+   NODE_ENV: production
+db:
+  image: mongo:latest
+  ports:
+   - "27017:27017"
+

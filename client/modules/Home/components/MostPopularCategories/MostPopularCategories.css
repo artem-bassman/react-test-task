@@ -1,0 +1,95 @@
+.most_popular_categories {
+  display: block;
+  background: #F9FAFB;
+  padding: 35px 45px;
+}
+
+.most_popular_categories_title {
+  display: inline-block;
+  font: 18px Roboto;
+  font-weight: 300;
+  color: #414141;
+}
+
+.reviews {
+  display: inline-block;
+  float: right;
+  font: 12px Roboto;
+  font-weight: 300;
+  color: lightgray;
+}
+
+.most_popular_item_wrapper {
+  margin-top: 15px;
+}
+
+.most_popular_item {
+  display: block;
+  width: 23.5%;
+  float: left;
+  text-align: center;
+  border-radius: 2px;
+  margin: 1%;
+  background: white;
+  transition: all .3s ease-in;
+  cursor: pointer;
+}
+
+.most_popular_item:first-child {
+  margin-left: 0;
+}
+
+.most_popular_item:last-child {
+  margin-right: 0;
+}
+
+.most_popular_item img {
+  height: 155px;
+  padding: 10px;
+}
+
+.most_popular_item p {
+  font: 16px Roboto;
+  font-weight: 300;
+  padding: 20px 0;
+  color: #ffffff;
+  background: #212121;
+}
+
+.most_popular_item:hover {
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+.most_popular_item:hover p {
+  background: #000;
+}
+
+@media screen and (max-width: 1000px) {
+  .most_popular_item {
+    width: 49%;
+  }
+
+  .most_popular_item:nth-child(even) {
+    margin: 1%;
+    margin-right: 0;
+  }
+
+  .most_popular_item:nth-child(odd) {
+    margin: 1%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .most_popular_item {
+    width: 99.5%;
+  }
+
+  .most_popular_item:nth-child(even) {
+    margin: 10px 0;
+  }
+
+  .most_popular_item:nth-child(odd) {
+    margin: 10px 0;
+  }
+}

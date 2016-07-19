@@ -1,0 +1,80 @@
+.trending_items {
+  display: block;
+  background: #EDEEEF;
+  padding: 55px 45px;
+}
+
+.trending_items_title {
+  display: block;
+  font: 18px Roboto;
+  font-weight: 300;
+  color: #414141;
+}
+
+.trending_item_wrapper {
+  margin-top: 15px;
+}
+
+.trending_item {
+  display: block;
+  width: 49%;
+  padding: 20px;
+  float: left;
+  border-radius: 2px;
+  margin: 1%;
+  background: white;
+  transition: all .3s ease-in;
+  cursor: pointer;
+  position: relative;
+  min-height: 315px;
+}
+
+.trending_item:hover {
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+.trending_item:nth-child(even) {
+  margin: 1%;
+  margin-right: 0;
+}
+
+.trending_item:nth-child(odd) {
+  margin: 1%;
+  margin-left: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .trending_item {
+    width: 99.5%;
+  }
+
+  .trending_item:nth-child(even) {
+    margin: 1% 0;
+  }
+  .trending_item:nth-child(odd) {
+    margin: 1% 0;
+  }
+}
+
+.trending_item img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: auto;
+}
+
+.trending_item .score {
+  font: 36px Roboto;
+  font-weight: 300;
+  color: #448aaf;
+}
+
+.trending_item .title {
+  font: 18px Roboto;
+  font-weight: 300;
+}
+
+.trending_item .topTitle {
+  position: absolute;
+  bottom: 15px;
+}
